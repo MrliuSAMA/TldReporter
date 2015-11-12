@@ -1,0 +1,2 @@
+ServerPath = /var/www/html/Public
+DataFile = /root/TLDServer/DataImport/tld.zone
