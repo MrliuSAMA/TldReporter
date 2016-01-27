@@ -20,6 +20,7 @@ def init():
 	elif os.path.isfile(path):
 		CUR_PATH = os.path.dirname(path)
 
+	#print CUR_PATH
 	global ServerPath
 	global DataFile
 	global KeyFinger
@@ -29,6 +30,7 @@ def init():
 	for linenum in range(len(lines)):
 		if lines[linenum].strip().split()[0] == "ServerPath":
 			ServerPath = lines[linenum].strip().split()[-1]
+			#print ServerPath
 		elif lines[linenum].strip().split()[0] == "DataFile":
 			DataFile = lines[linenum].strip().split()[-1]
 		elif lines[linenum].strip().split()[0] == "KeyFinger":
